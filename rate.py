@@ -1,9 +1,12 @@
 sh = input("Enter Hours: ")
 sr = input("Enter Rate: ")
-fh = float(sh)
-fr = float(sr)
-print(fh, fr)
-
+try:
+    fh = float(sh)
+    fr = float(sr)
+    print(fh, fr)
+except:
+    print("Error, Please use number values" )
+    quit()
 if fh > 40:
     print("Regular + Overtime rate")
     reg = fr * fh
